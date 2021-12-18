@@ -1,0 +1,1130 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+del {
+  text-decoration: line-through;
+}
+body {
+  font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #253858;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-weight: 500;
+}
+input,
+textarea,
+select {
+  font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+a {
+  color: #253858;
+}
+a:hover,
+.submit:hover {
+  filter: alpha(opacity = 85);
+  -moz-opacity: 0.85;
+  -khtml-opacity: 0.85;
+  opacity: 0.85;
+}
+.thumb {
+  display: block;
+}
+.thumb img {
+  display: block;
+  width: 100%;
+}
+p {
+  line-height: 1.6em;
+  font-size: 16px;
+  font-family: "GT-Eesti", Arial;
+  font-weight: 500;
+  color: #42526e;
+}
+.hidden {
+  display: none;
+}
+br.clear {
+  clear: both;
+  line-height: 0;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+::placeholder {
+  color: #c0ccda;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #c0ccda;
+}
+
+::-ms-input-placeholder {
+  color: #c0ccda;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 15px 10px -15px #111;
+  position: fixed;
+  z-index: 1;
+}
+
+header section.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+header div.left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header div.left h1 {
+  width: 180px;
+  margin-right: 30px;
+}
+
+header div.left h1 a {
+  display: block;
+}
+
+header div.left h1 a img {
+  width: 100%;
+  display: block;
+}
+
+header div.left ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header div.left ul li {
+  margin-right: 30px;
+}
+
+header div.left ul li:last-child {
+  margin-right: 0;
+}
+
+header div.left ul li a {
+  color: #135fd0;
+  font-weight: 600;
+}
+/* 
+header nav.right { 
+
+} */
+
+header nav.right ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav.right ul li {
+  margin-right: 30px;
+}
+
+header nav.right ul li:last-child {
+  margin-right: 0;
+}
+
+header nav.right ul li a {
+  color: #135fd0;
+  font-weight: 600;
+  padding: 5px 15px;
+  display: inline-block;
+}
+
+header nav.right ul li a.button {
+  border: 1px solid #135fd0;
+  border-radius: 4px;
+}
+
+#spotlight {
+  background-color: #f4f5f7;
+  padding: 100px 0;
+}
+
+#spotlight section.container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#spotlight section.container h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #253858;
+  margin-bottom: 20px;
+}
+
+#spotlight section.container p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #647188;
+  margin-bottom: 14px;
+}
+
+#spotlight section.container a.button {
+  background-color: #0152cc;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+#spotlight section.container span.label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #192d4f;
+}
+
+#spotlight section.container span.label a {
+  color: #1b64d1;
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-block;
+}
+
+#spotlight section.container span.label a img {
+  display: inline-block;
+}
+
+#spotlight section.container img.spotlight_image {
+  display: block;
+  width: 100%;
+  height: 380px;
+}
+
+#features {
+}
+
+#features img.curve {
+  display: block;
+  width: 100%;
+  transform: rotate(-180deg);
+  margin-top: -1px;
+}
+
+#features section.wrapper {
+}
+
+#features section.wrapper ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+#features section.wrapper ul li {
+  width: 32%;
+  text-align: center;
+  padding: 0 10px;
+}
+
+#features section.wrapper ul li img {
+  height: 140px;
+  display: inline-block;
+}
+
+#features section.wrapper ul li h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin: 24px 0;
+}
+
+#features section.wrapper ul li p {
+  font-size: 16px;
+  color: #1d3051;
+  font-weight: 500;
+}
+
+#features section.wrapper ul li p span {
+  color: #1b64d1;
+  font-weight: 500;
+}
+
+#highlights {
+  margin-top: 80px;
+  background-color: #f4f5f7;
+}
+
+#highlights section.item {
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#highlights section.item div.img_container {
+  width: 65%;
+}
+
+#highlights section.item div.img_container img {
+  width: 100%;
+  display: block;
+}
+
+#highlights section.item div.content_box {
+  width: 33%;
+}
+
+#highlights section.item div.content_box span.label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 28px;
+  display: inline-block;
+}
+
+#highlights section.item div.content_box h3 {
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+#highlights section.item div.content_box p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+#highlights section.item div.content_box a {
+  color: #0152cc;
+  margin-right: 4px;
+}
+
+#highlights section.item div.content_box a img {
+  display: inline-block;
+}
+
+#resources {
+  background-color: #f4f5f7;
+  margin-top: -32px;
+}
+
+#resources section.top {
+  padding: 0 140px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+#resources section.top .center_top {
+  text-align: center;
+}
+
+#resources section.top h3 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+#resources section.top p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+#resources section.top ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#resources section.top ul li {
+  width: 48%;
+  background-color: #fff;
+  padding: 40px 40px;
+  border-radius: 4px;
+}
+
+#resources section.top ul li img.top {
+  display: inline-block;
+  width: 80px;
+  height: 100px;
+}
+
+#resources section.top ul li h3 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+#resources section.top ul li p {
+  font-size: 16px;
+}
+
+#resources section.top ul li a {
+  display: inline-block;
+}
+
+#resources section.top ul li a img {
+  display: inline-block;
+}
+
+#resources section.bottom .center_bottom {
+  text-align: center;
+}
+
+#resources section.bottom h3 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+#resources section.bottom p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+#resources section.bottom ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#resources section.bottom ul li {
+  width: 32%;
+  padding: 10px 2%;
+}
+
+#resources section.bottom ul li img {
+  display: inline-block;
+  height: 100px;
+}
+
+#resources section.bottom ul li h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+#resources section.bottom ul li p {
+  font-size: 20px;
+}
+
+#brands { 
+
+}
+
+#brands img.curve { 
+	display: block;
+	width: 100%;
+	transform: rotate(-180deg);
+	margin-top: -1px;
+}
+
+#brands section.container { 
+	text-align: center;
+	padding: 140px 67px;
+  border-bottom: 2px solid #bdbdbd;
+}
+
+#brands section.container h3 { 
+	font-size: 40px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+#brands section.container img { 
+	display: inline-block;
+	max-width: 100%;
+
+}
+
+#pricing { 
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+#pricing section.top { 
+  text-align: center;
+}
+
+#pricing section.top h3 { 
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 34px;
+}
+
+#pricing section.top ul { 
+  display: flex;
+  justify-content: space-between;
+}
+
+#pricing section.top ul li { 
+  width: 32%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#pricing section.top ul li div.title { 
+  padding: 40px;
+  border-bottom: solid 2px rgba(99, 99, 99, 0.2);
+}
+
+#pricing section.top ul li div.title h5 { 
+  font-size: 28px;
+  font-weight: 600;
+}
+
+#pricing section.top ul li div.title.bg{
+  background-color: #F4F5F7;
+}
+
+#pricing section.top ul li div.content { 
+  padding: 40px;
+}
+
+#pricing section.top ul li div.content h4 { 
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+#pricing section.top ul li div.content span.user { 
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#pricing section.top ul li div.content small { 
+  font-size: 16px;
+  display: block;
+  margin-bottom: 36px;
+}
+
+#pricing section.top ul li div.content a{
+  display: inline-block;
+}
+
+#pricing section.top ul li div.content a.button { 
+  display: inline-block;
+  margin-bottom: 36px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0152cc;
+  border: 1px solid #0152cc;
+  border-radius: 4px;
+}
+
+#pricing section.top ul li div.content a.button_fil{
+  display: inline-block;
+  margin-bottom: 36px;
+  background-color: #0152cc;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+#pricing section.top ul li div.content span.label { 
+  display: block;
+}
+
+#pricing section.top div.bottom{
+  margin: 48px 0;
+}
+
+#pricing section.top div.bottom p{
+  padding: 24px 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: #000;
+}
+
+#pricing section.top div.bottom p strong{
+  font-weight: 600;
+  color: #000;
+}
+
+#pricing section.top div.bottom p a{
+  color: #0152cc;
+}
+
+#pricing section.top div.bottom p a:hover{
+  text-decoration: underline;
+}
+
+#pricing section.bottom { 
+  text-align: center;
+}
+
+#pricing section.bottom a.label { 
+  color: #0152cc;
+}
+
+#pricing section.bottom a.label:hover{
+  text-decoration: underline;
+}
+
+#pricing section.bottom div.content { 
+  background-color: #F4F5F7;
+  margin: 120px;
+}
+
+#pricing section.bottom div.content div.item { 
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+
+}
+
+#pricing section.bottom div.content div.item div.left { 
+  width: 16%;
+  display: block;
+}
+
+#pricing section.bottom div.content div.item div.left img { 
+  width: 80%;
+  display: block;
+}
+
+#pricing section.bottom div.content div.item div.right { 
+  width: 76%;
+  text-align: left;
+}
+
+#pricing section.bottom div.content div.item div.right h3 { 
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+#pricing section.bottom div.content div.item div.right p { 
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+#pricing section.bottom div.content div.item div.right a { 
+  color: #0152cc;
+}
+
+#pricing section.bottom div.content div.item div.right a :hover {
+  text-decoration: underline;
+}
+
+#pricing section.bottom div.content div.item div.right img { 
+  display: inline-block;
+}
+
+#banner { 
+  min-height: 300px;
+  background-image: url(../images/left_bottom_hero.png) , url(../images/right_bottom_hero.png);
+  background-repeat: no-repeat , no-repeat;
+  background-position:bottom left , bottom right ;
+  background-size: 600px 300px , 600px 300px;
+  text-align: center;
+}
+
+#banner h3 { 
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+
+}
+
+#banner a.button { 
+  
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #0152cc;
+  color: #fff;
+  border-radius: 4px;
+}
+
+footer { 
+
+}
+
+footer { 
+  background-color:#f4f5f7;
+}
+
+footer section.top { 
+  padding: 32px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-bottom: 1.8px solid #c0ccda;
+}
+
+footer section.top div.item { 
+  width: 24%;
+}
+
+footer section.top div.item.large{
+  width: 48%;
+}
+footer section.top div.item.large p{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+footer section.top div.item.large form input{
+  margin-bottom: 32px;
+}
+
+footer section.top div.item.large form input.email {
+  border: 1px solid #42526e;
+  border-radius: 4px;
+  height: 40px;
+  width: 400px;
+  padding: 10px 20px;
+  margin-right: 10px;
+}
+
+footer section.top div.item.large form input.subscribe{
+  border: 1px solid #0152cc;
+  height: 40px;
+  width: 112px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #0152cc;
+  font-size: 16px;
+
+}
+
+footer section.top div.item h3 { 
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+footer section.top div.item ul { 
+
+}
+
+footer section.top div.item ul li { 
+  margin-bottom: 12px;
+  font-size: 12px;
+}
+
+footer section.top div.item ul li a { 
+  
+}
+
+footer section.top div.item ul li a:hover{
+  text-decoration: underline;
+}
+
+footer section.top div.social { 
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+  align-items: center;
+}
+
+footer section.top div.social p { 
+  margin-right: 40px;
+  margin-bottom: 0;
+}
+
+footer section.top div.social ul { 
+  display: flex;
+  align-items: center;
+}
+
+footer section.top div.social ul li { 
+  margin-right: 8px;
+
+}
+
+footer section.top div.social ul li a { 
+  display: block;
+  width: 32px;
+
+}
+
+footer section.top div.social ul li a img { 
+  display: block;
+  width: 100%;
+}
+
+footer section.bottom { 
+  padding: 30px;
+}
+
+footer section.bottom div.left { 
+  width: 60%;
+}
+
+footer section.bottom div.left div.top { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+footer section.bottom div.left div.top h1.left { 
+
+}
+
+footer section.bottom div.left div.top h1.left a { 
+  display: block;
+  width: 120px;
+}
+
+footer section.bottom div.left div.top h1.left a img { 
+  display: block;
+  width: 100%;
+}
+
+footer section.bottom div.left div.top ul { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer section.bottom div.left div.top ul li { 
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+footer section.bottom div.left div.top ul li a { 
+
+}
+
+footer section.bottom div.left div.top p { 
+  font-size: 14px;
+}
+
+
+footer section.bottom div.right { 
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media all and (max-width:1280px){
+  header div.left ul li{
+    margin-left: 25px;
+  }
+  #highlights section.item div.content_box h3{
+    font-size: 44px;
+
+  }
+  header div.left ul li{
+    margin: 0 10px;
+  }
+}
+
+
+@media all and (max-width:980px){
+ 
+  header div.left ul{
+    display: none;
+  }
+  #spotlight{
+    padding: 120px 0;
+  }
+  #highlights section.item div.content_box h3{
+    font-size: 32px;
+  }
+  #highlights section.item div.content_box p{
+    font-size: 16px;
+  }
+  #resources section.top ul li{
+    padding: 28px 28px;
+  }
+  #resources section.top ul li h3 {
+    font-size: 22px;
+  }
+  #resources section.top ul li p{
+    font-size: 12px;
+  }
+  #resources section.top {
+    padding: 0px 100px;
+  }
+  #pricing section.bottom div.content {
+    margin: 0 80px;
+  }
+  #banner {
+    background-size: 400px 200px,400px 200px;
+  }
+  footer section.top div.item {
+    width: 48%;
+    margin-bottom: 30px;
+  }
+  footer section.top div.item.large form input.email {
+    width: 300px;
+  }
+  footer section.bottom div.left div.top ul {
+    margin-left: 40px;
+  }
+}
+
+
+@media all and (max-width:756px){
+
+  #spotlight section.container h1{
+    font-size: 36px;
+  }
+  #features section.wrapper ul li{
+    width: 100%;
+    padding: 20px 60px;
+  }
+  #highlights section.item div.content_box h3{
+    font-size: 28px;
+  }
+  #highlights section.item div.content_box p{
+    font-size: 12px;
+  }
+  #resources section.top {
+    padding: 0px 60px;
+  }
+  #resources section.top ul li a {
+    font-size: 12px;
+  }
+  #resources section.bottom h3{
+    font-size: 28px;
+  }
+  #resources section.bottom p {
+    font-size: 16px;
+  }
+  #resources section.bottom ul{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  #resources section.bottom ul li{
+    width: 100%;
+  }
+  #brands section.container h3{
+    font-size: 36px;
+  }
+  #pricing section.top h3{
+    font-size: 36px;
+  }
+  #pricing section.top ul{
+    flex-wrap: wrap;
+  }
+  #pricing section.top ul li {
+    width: 100%;
+  }
+  #pricing section.bottom div.content div.item {
+    padding: 40px 20px;
+  }
+  #banner{
+    background-size: 300px 200px,300px 200px;
+
+  }
+}
+
+@media all and (max-width:640px){
+  #spotlight section.container p{
+    font-size: 16px;
+  }
+  #spotlight section.container a.button{
+    padding: 2px 5px;
+    font-size: 16px;
+  }
+  #spotlight section.container img.spotlight_image {
+    display: none;
+  }
+  #highlights section.item{
+    flex-wrap: wrap;
+  }
+  #highlights section.item div.img_container{
+    width: 100%;
+  }
+  #highlights section.item div.content_box{
+    width: 100%;
+  }#resources section.top h3 {
+    font-size: 36px;
+  }
+  #resources section.top p {
+    font-size: 16px;
+  }
+  #resources section.top{
+    padding: 0 28px;
+  }
+  #resources section.top ul{
+    flex-wrap: wrap;
+  }
+  #resources section.top ul li{
+    width: 100%;
+  }
+  #brands section.container h3 {
+    font-size: 28px;
+  }
+  #pricing section.top h3{
+    font-size: 28px;
+  }
+  #pricing section.bottom div.content div.item div.right h3 {
+    font-size: 22px;
+  }
+  #pricing section.bottom div.content div.item div.right p {
+    font-size: 14px;
+  }
+  #pricing section.bottom div.content{
+    margin: 0px 28px;
+  }
+  #pricing section.bottom div.content div.item div.right a {
+    font-size: 12px;
+  }
+  #banner h3{
+    font-size: 28px;
+  }
+  #banner{
+    background-size: 250px 100px,250px 100px;
+  }
+  footer section.top div.item.large form input.email {
+    width: 200px;
+  }
+  footer section.bottom div.left div.top h1.left a img{
+    width: 50%;
+  }
+  footer section.bottom div.left div.top ul li{
+    font-size: 10px;
+  }
+  footer section.bottom div.left div.top p{
+    font-size: 10px;
+  }
+  footer section.bottom div.right a{
+    font-size: 10px;
+  }
+  input, textarea, select{
+    font-size: 12px;
+    width: 60%;
+  }
+  footer section.bottom div.left div.top ul{
+    margin-left: 0;
+  }
+  footer section.bottom div.left div.top ul li{
+    margin-right: 10px;
+  }
+  footer section.bottom div.left div.top ul li a{
+    font-size: 8px;
+  }
+
+
+  
+}
+
+
+@media all and (max-width:480px){
+  #spotlight section.container h1{
+    font-size: 32px;
+  }
+  header nav.right ul{
+    display: none;
+  }
+  #banner{
+    background:none;
+  }
+  
+  footer section.bottom div.left div.top p {
+    font-size: 8px;
+  }
+  footer section.top div.social ul li a img {
+    width: 50%;
+  }
+  #resources section.top ul li img.top {
+    width: 60px;
+    height: 80px;
+  }
+  #brands section.container h3 {
+    font-size: 24px;
+  }
+  #brands section.container{
+    padding: 60px 60px;
+  }
+  #pricing section.top h3 {
+    font-size: 24px;
+  }
+  #pricing section.bottom div.content div.item div.left {
+    display: none;
+  }
+  #pricing section.bottom div.content div.item div.right h3{
+    font-size: 20px;
+  }
+  #pricing section.bottom div.content div.item div.right p {
+    font-size: 12px;
+  }
+  #banner h3 {
+    font-size: 24px;
+  }
+  footer section.bottom div.left div.top ul li a{
+    font-size: 7px;
+  }
+}
+
+@media all and (max-width:360px){
+  #features section.wrapper ul li{
+    width: 100%;
+    padding: 20px 40px;
+  }
+  
+}
+
+@media all and (max-width:320px){
+  
+}
+
+
